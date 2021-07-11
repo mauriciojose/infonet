@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Infonet</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="./imagens/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./imagens/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./imagens/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./imagens/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./imagens/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./imagens/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./imagens/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./imagens/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./imagens/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="./imagens/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./imagens/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./imagens/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./imagens/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./imagens/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./imagens/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+	<link rel="icon" type="image/png" href="./images/logo.png">
+
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        .navbar-dark .navbar-nav .nav-link {
+            color: #28a9e2;
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #28a9e2;
+        }
+
+        .navbar-dark .navbar-nav .nav-link.active1::after {
+            width: 100%;
+            height: 42px;
+            border-radius: 100px 100px 0px 100px;
+        }
+        .navbar-dark .navbar-nav .nav-link1 {
+            color: #fff;
+        }
+        .navbar-dark .navbar-nav .nav-link1:hover {
+            color: #fff;
+        }
+        .navbar-dark .navbar-nav .nav-link1::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #42CAA9;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: 0 auto;
+            border-radius: 0px;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+            z-index: -1;
+            color: white;
+        }
+
+        .hexa, .hexa div {
+            margin: 0 auto;
+            transform-origin: 50% 50%;
+            overflow: hidden;
+            width: 300px;
+            height: 300px;
+        }
+        .hexa {
+            width: 325px;
+            height: 230px;
+        }
+        .hexa div {
+            width: 100%;
+            height: 100%;
+        }
+        .hexa {
+            transform: rotate(120deg);
+        }
+        .hex1 {
+            transform: rotate(-60deg);
+        }
+        .hex2 {
+            transform: rotate(-60deg);
+        }
+
+    </style>
+
+</head>
+<body id="page-top" class="politics_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div id="main-ld">
+			<div id="loader"></div>  
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+	
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">
+			<img class="img-fluid" src="images/logo.png" alt="" />
+		</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#home">Início</a>
+            </li>
+			<li class="nav-item">
+			  <a class="nav-link" href="index.html#pricing">Planos</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="index.html#services">Serviços</a>
+			</li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">Sobre nós</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Fale conosco</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link nav-link1 active1" href="#">Indique um amigo</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="assinar" class="section">
+        <div class="container">
+            
+            <div class="row" style="margin: 40px 0 40px 0">
+                <div class="section-title text-center col-md-8" style="margin-bottom: 0 !important;display: flex !important; flex-direction: column; align-items: center; justify-content: center;">
+                    <h3>Indique um amigo e ganhe</h3>
+                    <p>Assine e curta todo o poder de nossa conexão.</p>
+                </div><!-- end title -->
+    
+                <div class="part col-md-4">
+                    <!-- <h2>Hexagon</h2> -->
+                      <div class="hexa">
+                        <div class="hex1">
+                          <div class="hex2">
+                            <img src="./images/indiqueamigo.jpg" alt="" width="320" height="313" />
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+                <div class="col-md-12">
+                    <span style="color: #28a9e2;font-size: 1.5em;">Informe Seus Dados</span>
+                </div>
+                <div class="col-md-12">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+							<div class="row">
+								<div class="col-md-12 row">
+									<div class="form-group col-md-12">
+										<input class="form-control" id="name" type="text" placeholder="Seu Nome" required="required" data-validation-required-message="Nome é obrigatório.">
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+ 
+                                <div class="col-md-12 row">
+                                    <div class="form-group col-md-12">
+										<input class="form-control" id="cpf" type="text" placeholder="Seu CPF" required="required" data-validation-required-message="Email é obrigatório.">
+										<p class="help-block text-danger"></p>
+									</div>
+                                </div>
+ 
+                                <div class="col-md-12 row">
+                                    <div class="form-group col-md-6">
+										<input class="form-control" id="phone" type="tel" placeholder="Seu Whatsapp" required="required" data-validation-required-message="Whatsapp é obrigatório.">
+										<p class="help-block text-danger"></p>
+									</div>
+                                    <div class="form-group col-md-6">
+										<input class="form-control" id="cidade" type="text" placeholder="Sua Cidade" required="required" data-validation-required-message="Cidade é obrigatório.">
+										<p class="help-block text-danger"></p>
+									</div>
+                                </div>
+							</div>
+						</form>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-12" style="margin-top: 20px;">
+                    <span style="color: #28a9e2;font-size: 1.5em;">Os do seu Amigo</span>
+                </div>
+                <div class="col-md-12">
+                    <div class="contact_form">
+                        <div id="message"></div>
+							<div class="row">
+								<div class="col-md-12 row">
+									<div class="form-group col-md-12">
+										<input class="form-control" id="name_amigo" type="text" placeholder="Nome do Amigo" required="required" data-validation-required-message="Nome do Amigo é obrigatório.">
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+ 
+                                <div class="col-md-12 row" style="">
+                                    <div class="form-group col-md-12">
+										<input class="form-control" id="email_amigo" type="text" placeholder="Email do Amigo" required="required" data-validation-required-message="Email do Amigo é obrigatório.">
+										<p class="help-block text-danger"></p>
+									</div>
+                                </div>
+ 
+                                <div class="col-md-12 row" style="">
+                                    <div class="form-group col-md-6">
+										<input class="form-control" id="phone_amigo" type="tel" placeholder="Whatsapp do Amigo" required="required" data-validation-required-message="Whatsapp do Amigo é obrigatório.">
+										<p class="help-block text-danger"></p>
+									</div>
+                                    <div class="form-group col-md-6">
+										<input class="form-control" id="cidade_amigo" type="text" placeholder="Cidade do seu Amigo" required="required" data-validation-required-message="Cidade do Amigo é obrigatório.">
+										<p class="help-block text-danger"></p>
+									</div>
+                                </div>
+
+								<div class="clearfix"></div>
+								<div class="col-lg-12 text-center">
+									<div id="success"></div>
+									<button id="sendMessageButton" class="sim-btn hvr-bounce-to-top" type="submit">Enviar Menssagem</button>
+								</div>
+							</div>
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </form>
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+				<a href="#"><img src="images/logo.png" alt="" /></a>
+                <div class="footer-center">
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2021 Feito por : 
+					<a>Maurício José Miranda Guimarães</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+	<!-- Camera Slider -->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script> 
+	<script src="js/parallaxie.js"></script>
+	<script src="js/headline.js"></script>
+	<!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/indique_amigo.js"></script>
+    <!-- ALL PLUGINS -->
+    <!-- <script src="js/custom.js"></script> -->
+    <script src="js/jquery.vide.js"></script>
+
+    <script>
+        $(window).load(function() {
+            $("#preloader").on(500).fadeOut();
+            $(".preloader").on(600).fadeOut("slow");
+        });
+
+    </script>
+</body>
+</html>
