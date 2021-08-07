@@ -34,6 +34,21 @@ html, body{
 	height: 100%;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: #888; */
+  background: rgb(40, 169, 226);
+}
+
 body.demos .section {
     background: url(images/bg.png) repeat top center #f2f3f5;
 }
@@ -2639,4 +2654,15 @@ form input, form select, form textarea{
 
 .form-group {
     margin-bottom: 2rem;
+}
+
+.flex-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-wrap img{
+    width: 165px;
+    height: 140px;
+    object-fit: contain;
 }
