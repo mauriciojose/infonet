@@ -2662,7 +2662,7 @@ form input, form select, form textarea{
     justify-content: center;
 }
 .flex-wrap img{
-    width: 165px;
-    height: 140px;
+    width: 155px;
+    height: 130px;
     object-fit: contain;
 }
