@@ -34,6 +34,10 @@ html, body{
 	height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -2656,13 +2660,71 @@ form input, form select, form textarea{
     margin-bottom: 2rem;
 }
 
-.flex-wrap{
+.flex-wrap-container{
+    width: auto;
     display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    position: relative;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    padding: 0 20px;
 }
-.flex-wrap img{
+
+.flex-wrap-container::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+  }
+  
+  /* Track */
+  .flex-wrap-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  .flex-wrap-container::-webkit-scrollbar-thumb {
+    /* background: #888; */
+    background: transparent;
+  }
+
+.flex-wrap-container img{
+    flex: 0 0 auto;
     width: 155px;
     height: 130px;
     object-fit: contain;
+}
+
+.flex-wrap-container .btn-controls{
+    position: absolute;
+    left: 0;
+}
+
+.flex-wrap-container-controls{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.flex-wrap-container-controls .btn-controls{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    height: 40%;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+.flex-wrap-container-controls .btn-controls object{
+    cursor: pointer;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+.flex-wrap-container-controls .btn-controls:nth-child(1){
+    left: 0;
+}
+.flex-wrap-container-controls .btn-controls:nth-child(2){
+    right: 0;
 }
